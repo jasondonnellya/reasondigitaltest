@@ -1,0 +1,15 @@
+:root {
+  /* colors */
+  --primary: #FFFFFF;
+  --secondary: #FFFFFF;
+
+  /* font family */
+
+  --font-primary: 'Open Sans';
+  --font-secondary: sans-serif;
+
+  /* font sizes */
+  --font-large: 12px;
+  --font-normal: 12px;
+  --font-small: 12px;
+}
