@@ -10,7 +10,7 @@ export const globalStore = defineStore('counter', {
     ...navStore.getters
   },
   actions: {
-    ...navStore.setters
+    ...navStore.actions
   },
 });
 

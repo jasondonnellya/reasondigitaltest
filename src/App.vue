@@ -3,6 +3,7 @@
     <SiteHeader />
     <SiteNavbar />
     <router-view></router-view>
+    {{ navItems }}
   </div>
 </template>
 
@@ -17,7 +18,13 @@ export default {
   },
   mounted() {
     const store = globalStore();
-    store.setNavItems([]);
+    store.setNavItems(["Home"]);
+  },
+  computed: {
+    navItems() {
+      const store = globalStore();
+      return store.NavItems;
+    }
   }
 }
 </script>

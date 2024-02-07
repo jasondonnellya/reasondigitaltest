@@ -1,9 +1,9 @@
 export default {
   state: {
-    navItems: []
+    navItems: ["Default"]
   },
   getters: {
-    navItems: (state) => state.navItems,
+    NavItems: (state) => state.navItems,
   },
   actions: {
     setNavItems(navItems) {
