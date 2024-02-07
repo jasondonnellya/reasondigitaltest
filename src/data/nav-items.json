@@ -1,0 +1,28 @@
+{
+  "navItems": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "What we do",
+      "href": "/what-we-do"
+    },
+    {
+      "label": "The digital divide",
+      "href": "/the-digital-divide"
+    },
+    {
+      "label": "Get involved",
+      "href": "/get-involved"
+    },
+    {
+      "label": "Our network",
+      "href": "/our-network"
+    },
+    {
+      "label": "Insights",
+      "href": "/insights"
+    }
+  ]
+}

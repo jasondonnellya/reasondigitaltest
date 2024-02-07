@@ -3,28 +3,25 @@
     <SiteHeader />
     <SiteNavbar />
     <router-view></router-view>
-    {{ navItems }}
   </div>
 </template>
 
 <script>
+import './assets/css/import.css';
+
 import SiteHeader from './components/SiteHeader';
 import SiteNavbar from './components/SiteNavbar';
 import globalStore from './store/globalStore';
+
+import navItemsJSON from './data/nav-items.json';
 export default {
   components: {
     SiteHeader,
     SiteNavbar
   },
-  mounted() {
+  created() {
     const store = globalStore();
-    store.setNavItems(["Home"]);
-  },
-  computed: {
-    navItems() {
-      const store = globalStore();
-      return store.NavItems;
-    }
+    store.setNavItems(navItemsJSON.navItems);
   }
 }
 </script>

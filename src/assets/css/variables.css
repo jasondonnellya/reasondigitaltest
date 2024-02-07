@@ -1,15 +1,27 @@
 :root {
   /* colors */
-  --primary: #FFFFFF;
-  --secondary: #FFFFFF;
+  --primary: #497C8F;
+  --secondary: #478077;
+  --red: #BD324B;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #ECECEC;
 
   /* font family */
-
   --font-primary: 'Open Sans';
   --font-secondary: sans-serif;
 
   /* font sizes */
-  --font-large: 12px;
-  --font-normal: 12px;
-  --font-small: 12px;
+  --font-large: 32px;
+  --font-normal: 20px;
+  --font-small: 16px;
+  --font-xsmall: 12px;
+
+  /* padding */
+  --padding: 20px;
+  --padding-small: 10px;
+  --padding-xsmall: 5px;
+
+  /* grid */
+  --gap: 15px;
 }

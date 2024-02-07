@@ -1,3 +1,69 @@
+/**
+  Ideally this code would use Sass but for this test I have opted to use core CSS.
+  Using Sass preprocessor this css would look much better using Sass syntax with BEM for example:
+
+    .site-section {
+      &__title {
+
+      }
+    }
+*/
+
 .site-section {
-  
+  padding: var(--padding);
+  display: grid;
+  gap: var(--gap);
+
+
+  .site-section__title {
+    font-family: var(--font-primary);
+  }
+
+  .site-section__help-box {
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    span {
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}
+
+.site-section--hero {
+  .site-section__title {
+    font-size: var(--font-large);
+    background: var(--primary);
+    color: var(--white);
+    padding: var(--padding-small);
+  }
+
+  p {
+    background: var(--white);
+    color: var(--primary);
+    padding: var(--padding-small);
+  }
+
+  background: url('https://picsum.photos/2000/2000');
+  background-size: 100%;
+  background-position: 0, 50%;
+}
+
+.site-section--about {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  > :first-child {
+    background: url('https://picsum.photos/1000/1000');
+    background-size: 100%;
+    background-position: 0, 50%;
+  }
+
+  > :nth-child(2) {
+    padding: var(--padding);
+    display: grid;
+    gap: var(--gap);
+  }
 }
