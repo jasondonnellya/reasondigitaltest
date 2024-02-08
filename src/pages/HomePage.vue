@@ -2,9 +2,6 @@
   <div>
     <HeroSection />
     <AboutSection />
-    <div class="site-section text-center">
-      {{ catFact }}
-    </div>
     <HelpSection />
     <WhatWeDoSection />
   </div>
@@ -21,14 +18,6 @@ export default {
     HelpSection,
     HeroSection,
     WhatWeDoSection
-  },
-  data() {
-    return {
-      catFact: ''
-    }
-  },
-  mounted() {
-    // pull cat fact.
   }
 }
 </script>
