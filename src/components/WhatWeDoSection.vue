@@ -1,19 +1,23 @@
 <template>
-  <div class="site-section">
-    <h3>What do we do?</h3>
-    <p>You might not have heard of us, but we're the people behind the following impactful programmes</p>
-    <div class="grid grid--4">
-      <div v-for="{ title, content } in gridItems" :key="title">
+  <div class="site-section site-section--primary">
+    <h3 class="site-section__title">What do we do?</h3>
+    <p class="text-small">You might not have heard of us, but we're the people behind the following impactful programmes</p>
+    <div class="grid grid--4 grid--gap">
+      <div class="grid grid--gap grid--white grid-item text-center" v-for="{ title, content } in gridItems" :key="title">
         <h4>{{ title }}</h4>
-        <p>{{ content }}</p>
-        <button class="site-button site-button--red site-button--rounded site-button--border">
-          Read more
-        </button>
+        <p class="text-xsmall">{{ content }}</p>
+        <div>
+          <button class="site-button site-button--red site-button--rounded site-button--border site-button--inverted">
+            Read more
+          </button>
+        </div>
       </div>
     </div>
-    <button class="site-button site-button--red site-button--rounded site-button--border">
-      More about what we do
-    </button>
+    <div class="text-center">
+      <button class="site-button site-button--red site-button--rounded site-button--inverted">
+        More about what we do
+      </button>
+    </div>
   </div>
 </template>
 
