@@ -2,6 +2,9 @@
   <div>
     <HeroSection />
     <AboutSection />
+    <div class="site-section text-center">
+      {{ catFact }}
+    </div>
     <HelpSection />
     <WhatWeDoSection />
   </div>
